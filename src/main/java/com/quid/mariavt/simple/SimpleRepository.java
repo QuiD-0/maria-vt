@@ -16,7 +16,7 @@ public interface SimpleRepository {
 
         @Override
         public String find500ms() {
-            String query = "SELECT SLEEP(0.5)";
+            String query = "SELECT SLEEP(1)";
             return jdbcClient.sql(query).query().singleValue().toString();
         }
 

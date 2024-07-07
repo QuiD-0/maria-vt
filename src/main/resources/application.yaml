@@ -9,6 +9,13 @@ spring:
     username: local
     password: local
     driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      maximum-pool-size: 100
   threads:
     virtual:
       enabled: true
+logging:
+  level:
+    org.hibernate.SQL: info
+    root: info
+    com.zaxxer.hikari.pool.HikariPool: debug

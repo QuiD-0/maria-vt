@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: platform
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mariadb://localhost:3306/dummy
+    username: local
+    password: local
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      maximum-pool-size: 100
+  threads:
+    virtual:
+      enabled: false
